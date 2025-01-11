@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./stylesheet/Homepage.css">
+   <link rel="stylesheet" href="./stylesheet/media-992.css">
+   <title>EJ</title>
+</head>
+<body>
+   <div class="mainWrapper">
+<!-- TOP NAV SECTION -->
+      <nav>
+         <div class="logo">
+            <a href="#home"><p class="logoMobile">E</p><p class="logoMobile logoMobile-color">J</p></a>
+            <a href="#home"><p class="logo1">Ejemar.</p><p class="logo2">MALOLOY-ON</p></a>
+         </div>
+         <div class="navBtn">
+            <div class="btnWrapper"><a href="#home">Home</a></div>
+            <div class="btnWrapper"><a href="#about">About</a></div>
+            <div class="btnWrapper"><a href="#project">Projects</a></div>
+            <div class="btnWrapper"><a href="#contact">Contact</a></div>
+         </div>
+      </nav>
+<!-- home section -->
+      <div id="home" class="home">
+         <div class="hero-wrapper">
+            <div class="hero-text">
+               <div class="intro">
+                  <p class="intro-name">Hi!, I'm Ejemar Maloloy-on.</p>
+                  <h1><strong>Web</strong> Developer</h1>
+                  <p >Feel free to explore my portfolio, check out my<br>projects, and don't hesitate to reach out.</p>
+               </div>
+               <div class="social-link">
+                  <a onclick="openGmail()" href=""><img src="./icon/Gmail.svg"></a>
+                  <a onclick="openLinkedIn()" href=""><img src="./icon/Linkedin.svg"></a>
+                  <a onclick="openGitHub()" href=""><img src="./icon/Github.svg"> </a>
+                  <a onclick="openMessenger()" href=""><img src="./icon/Messenger.svg"></a>
+               </div>
+               <div class="download-cv">
+                  <a href="#contact">Contact me</a>
+                  <button onclick="downloadCV()">Resume <img src="./icon/Download.svg"></button>
+               </div>
+            </div>
+            <div class="hero-logo">
+               <img src="./icon/Me.jpg" alt="Me">
+            </div>
+         </div>
+      </div>
+
+<!-- ABOUT SECTION  -->
+      <div id="about" class="about">
+         <h3><strong>About</strong> Me</h3>
+         <div class="about-wrapper">
+            <div class="about-cards">
+               <h5>What I Do.</h5>
+
+               <li>I specialize in crafting clean and efficient code to bring ideas to life on the web.</li>
+               <li>From front-end development using technologies like HTML5, CSS3, and JavaScript to back-end development with Node.js, I love turning concepts into responsive and user-friendly websites.</li>
+               <li>Also experience working with web development frameworks and libraries, such as React.</li>
+            </div>
+            <div class="about-cards">
+               <h5>Why Choose Me?</h5>
+               <li><img src="./icon/list-style.svg">Continuous Learner</li>
+               <li><img src="./icon/list-style.svg">Collaborative Spirit</li>
+               <li><img src="./icon/list-style.svg">Passion for Excellence</li>
+               <li><img src="./icon/list-style.svg">Commitment to Deadlines</li>
+               <li><img src="./icon/list-style.svg">Adaptable and Agile</li>
+            </div>
+            <div class="about-cards">
+               <h5>Educational Background :</h5>
+               <li><img src="./icon/course.svg">BS Information Technology</li>
+               <li><img src="./icon/education.svg">PIT Tabango Campus</li>
+               <li><img src="./icon/location.svg">Otabon, Tabango, Leyte</li>
+               <li><img src="./icon/list-style.svg">2023</li>
+            </div>
+         </div>
+         <h4><strong>Technologies</strong></h4>
+         <div class="tech last-container">
+            <div><img src="./icon/tech/React.svg"></div>
+            <div><img src="./icon/tech/JavaScript.svg"></div>
+            <div><img src="./icon/tech/Html.svg"></div>
+            <div><img src="./icon/tech/CSS.svg"></div>
+            <div><img src="./icon/tech/Mongodb.svg"></div>
+            <div><img src="./icon/tech/Nodejs.svg"></div>
+            <div><img src="./icon/tech/GIT.svg"></div>
+            <div><img src="./icon/tech/Github.svg"></div>               
+         </div>
+      </div>
+
+<!-- project section  -->
+      <div id="project" class="project">
+         <h3><strong>My</strong> Works</h3>
+         <div class="project-container project-container-reverse">
+            <div class="project-text">
+               <h4>Ecommerce Website</h4>
+               <p> This is an e-commerce website designed to allow users to browse and explore products. Customers can add items to their cart or proceed to purchase. Additionally, sellers will have the ability to manage their products online. Currently, the project focuses on the user interface, with other functionalities still under development. .</p>
+               <h4>Tech use</h4>
+               <div class="tech-use">
+                  <small>JavaScript</small>
+                  <small>HTML</small>
+                  <small>CSS</small>
+               </div>
+               <button> <a href="https://dewezardtech.github.io/ecommerce.web/"></ahref> Repository <img src="./icon/tech/Github.svg"></button>
+            </div>
+            <div id="project-img" class="project-img">
+               <div class="visit-site-cover"><a href="./maintenance/maintenance.html"></div>
+               <video id="projectVideo" src="./projectVideo/ecommerce project.mp4" autoplay="1" loop="1" muted="1"></video>
+            </div></a>
+         </div>
+      </div>
+
+<!-- contact section  -->
+<div id="contact" class="contact">
+   <h3><strong>Contact</strong> Me</h3>
+   <form action="">
+      <div class="mail-con">
+         <div class="input-wrapper contact-area">
+            <label for="name" class="label">Fullname *</label>
+            <input placeholder="Fullname" id="name" type="text" required>
+            <label for="number" class="label">Phone number (optional)</label>
+            <input placeholder="Phone number" id="number" type="text">
+            <label for="email" class="label">Email Address *</label>
+            <input placeholder="example@sample.com" id="email" type="email" required>
+         </div>
+         <div class="input-wrapper txt-area">
+            <label for="msg" class="label">Message *</label>
+            <textarea required id="msg" cols="30" rows="10" placeholder="Your message here..."></textarea>
+            <div class="msg-wrapper">
+               <button onclick="sendEmail()" type="submit" class="msgbtn">Send <img src="./icon/Send.svg" alt=""></button>
+            </div>
+         </div>
+      </div> 
+   </form>
+</div>
+</body>
+</html>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./script/sendEmail.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./script/autoplay.js"></script>
+<script src="./script/socialLink.js"></script>
+<script src="./script/downloadCV.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
