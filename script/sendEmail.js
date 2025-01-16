@@ -13,9 +13,9 @@ function sendEmail() {
 
   // Use SmtpJS with a secure token
   Email.send({
-    SecureToken: "a94c8c75-308f-4b91-9699-1d664e343d1b", // Replace with your generated token
-    To: "recipient@example.com", // Replace with the recipient's email address
-    From: email.value, // Use the sender's email address (from the form)
+    SecureToken: "a94c8c75-308f-4b91-9699-1d664e343d1b", 
+    To: "recipient@example.com", 
+    From: email.value, 
     Subject: "Portfolio Contact Form Submission",
     Body: bodyMsg,
   })
@@ -29,7 +29,7 @@ function sendEmail() {
       } else {
         Swal.fire({
           title: "Error",
-          text: "Failed to send your message. Please try again later.",
+          text: "Failed to send your message. Please direct contact to email.",
           icon: "error",
         });
       }
