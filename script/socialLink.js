@@ -1,5 +1,5 @@
 function openGmail() {
-   var gmailLink = 'https://mail.google.com/mail/u/0/?fs=1&to=ejemarforegiver351@gmail.com&su=From+the+portfolio+&tf=cm';
+   var gmailLink = 'https://mail.google.com/mail/u/0/?fs=1&to=ejemarmaloloyon007@gmail.com&su=From+portfolio+&tf=cm';
       window.open(gmailLink);
 }
 function openLinkedIn() {
@@ -8,7 +8,7 @@ function openLinkedIn() {
       window.open(linkedinLink);
 }
 function openGitHub() {
-   window.open('https://github.com/dewezardtech', '_blank');
+   window.open('https://github.com/devwezardtech', '_blank');
 }
 function openMessenger() {
    var facebookUsername = 'maloloy-on.ejemar';
