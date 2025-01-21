@@ -7,6 +7,6 @@ function downloadCV() {
       link.download = 'EJEMAR MALOLOY-ON_RESUME.docx';
       document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link);
+      document.body.removeChild(link); 
    }
    
