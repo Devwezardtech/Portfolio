@@ -55,10 +55,14 @@
             <div class="about-cards">
                <h5>What I Do.</h5>
 
-               <li>I specialize in crafting clean and efficient code to bring ideas to life on the web.</li>
-               <li>From front-end development using technologies like HTML5, CSS3, and JavaScript to back-end development I have basic knowlegde Node.js with express also monggodb for database </li> 
-               <li>I love turning concepts into responsive and user-friendly websites.</li>
-               <li>Also I have basic knowlegde with web development frameworks and libraries, such as React.</li>
+               <ul>
+  <li>I specialize in writing clean, efficient, and maintainable code to bring web ideas to life with a strong focus on user experience and performance.</li>
+  <li>With hands-on experience in both front-end and back-end development, I build responsive, interactive, and scalable web applications using technologies like HTML5, CSS3, JavaScript, and React.js on the front end, and Node.js with Express and MongoDB on the back end.</li>
+  <li>I’m passionate about turning creative concepts into real-world, user-friendly web solutions — whether it’s a landing page or a full-stack eCommerce platform.</li>
+  <li>I continuously improve my skills and keep up with modern web development frameworks and tools like React, Tailwind CSS, and REST APIs to build dynamic and feature-rich applications.</li>
+  <li>I enjoy collaborating with others, solving real-world problems, and bringing value through code and design that matters.</li>
+</ul>
+
             </div>
             <div class="about-cards">
                <h5>Why Choose Me?</h5>
@@ -95,53 +99,63 @@
          <div class="project-container project-container-reverse">
             <div class="project-text">
                <h4>Ecommerce Website</h4>
-               <p> This is an e-commerce website designed to allow users to browse and explore products. Customers can add items to their cart or proceed to purchase. Additionally, sellers will have the ability to manage their products online. Currently, the project focuses on the user interface, with other functionalities still under development. .</p>
+               <p> A full-stack multi-role ecommerce platform built with the MERN stack. Includes secure login, product management, order tracking, PDF invoice generation, affiliate referral system, and responsive dashboards for admin, sellers, and users.</p>
                <h4>Tech use</h4>
                <div class="tech-use">
-                  <small>JavaScript</small>
-                  <small>HTML</small>
-                  <small>CSS</small>
+                  <small>Mongodb</small>
+                  <small>Express.js</small>
+                  <small>React.js</small>
+                  <small>Node.js</small>
+                  <small>Tailwind css</small>
                </div>
-               <button> <a href="https://dewezardtech.github.io/ecommerce.web/"></ahref> Repository <img src="./icon/tech/Github.svg"></button>
+               <button> <a href="https://github.com/Devwezardtech/mus-ecommerce"></ahref> Repository <img src="./icon/tech/Github.svg"></button>
             </div>
             <div id="project-img" class="project-img">
-               <div class="visit-site-cover"><a href="./maintenance/maintenance.html"></div>
+               <div class="visit-site-cover"><a href="https://mus-ecommerce-shop.onrender.com"></div>
                <video id="projectVideo" src="./projectVideo/ecommerce project.mp4" autoplay="1" loop="1" muted="1"></video>
             </div></a>
          </div>
       </div>
 
 <!-- contact section  -->
+<!-- contact section  -->
 <div id="contact" class="contact">
-   <h3><strong>Contact</strong> Me</h3>
-   <form action="">
-      <div class="mail-con">
-         <div class="input-wrapper contact-area">
-            <label for="name" class="label">Fullname *</label>
-            <input placeholder="Fullname" id="name" type="text" required>
-            <label for="number" class="label">Phone number (optional)</label>
-            <input placeholder="Phone number" id="number" type="text">
-            <label for="email" class="label">Email Address *</label>
-            <input placeholder="example@sample.com" id="email" type="email" required>
-         </div>
-         <div class="input-wrapper txt-area">
-            <label for="msg" class="label">Message *</label>
-            <textarea required id="msg" cols="30" rows="10" placeholder="Your message here..."></textarea>
-            <div class="msg-wrapper">
-               <button onclick="sendEmail()" type="submit" class="msgbtn">Send <img src="./icon/Send.svg" alt=""></button>
-            </div>
-         </div>
-      </div> 
-   </form>
+  <h3><strong>Contact</strong> Me</h3>
+  <form>
+    <div class="mail-con">
+      <div class="input-wrapper contact-area">
+        <label for="name">Fullname *</label>
+        <input type="text" name="name" placeholder="Fullname" required />
+
+        <label for="number">Phone (optional)</label>
+        <input type="text" name="phone" placeholder="Phone number" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" name="email" placeholder="example@sample.com" required />
+      </div>
+
+      <div class="input-wrapper txt-area">
+        <label for="msg" class="label">Message *</label>
+        <textarea name="message" rows="5" placeholder="Your message here..." required></textarea>
+      </div>
+
+      <div class="msg-wrapper">
+        <button class="msgbtn" type="submit">Send</button>
+      </div>
+    </div>
+  </form>
 </div>
+
 </body>
 </html>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="./script/sendEmail.js"></script>
+<!-- EmailJS & SweetAlert2 -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<!-- Your Scripts -->
+<script src="./script/sendEmail.js"></script>
 <script src="./script/autoplay.js"></script>
 <script src="./script/socialLink.js"></script>
 <script src="./script/downloadCV.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 

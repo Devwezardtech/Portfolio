@@ -1,10 +1,10 @@
 function downloadCV() {
-   var fileID = '1Q_bepA7kMD0VG6SkvliHGdxL2n0h4JFI';
+   var fileID = '1TrkHaJaA9EPuGtQuvNGFpwcIVVnXtnJc';
    var downloadLink = 'https://drive.google.com/uc?export=download&id=' + fileID;
 
    var link = document.createElement('a');
       link.href = downloadLink;
-      link.download = 'EJEMAR MALOLOY-ON_RESUME.docx';
+      link.download = 'EJEMAR MALOLOY-ON resume.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link); 

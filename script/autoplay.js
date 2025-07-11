@@ -26,3 +26,16 @@
       window.addEventListener('scroll', checkVideoScroll);
       window.addEventListener('resize', checkVideoScroll);
       checkVideoScroll(); // Check on page load
+
+
+  function slideProjects(direction) {
+    const container = document.getElementById('projectContainer');
+    const scrollAmount = 400; // Adjust scroll size per click
+
+    if (direction === 'left') {
+      container.scrollLeft -= scrollAmount;
+    } else {
+      container.scrollLeft += scrollAmount;
+    }
+  }
+
