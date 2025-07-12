@@ -39,3 +39,41 @@
     }
   }
 
+  const navLinks = document.getElementById("navLinks");
+  const hamburger = document.getElementById("hamburger");
+
+  function toggleMenu() {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+      hamburger.innerHTML = "&#10006;"; // ✖
+    } else {
+      hamburger.innerHTML = "&#9776;";  // ☰
+    }
+  }
+
+  // Auto-close on link click
+  const navItems = navLinks.querySelectorAll("a");
+  navItems.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      hamburger.innerHTML = "&#9776;";
+    });
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  // Function to handle scroll and reveal elements
+  function handleScroll() {
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll); // Also trigger on load

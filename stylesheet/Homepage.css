@@ -14,6 +14,7 @@ html {
    scroll-behavior: smooth;
    min-width: 370px;
    min-height: 400px;
+   height: 100%;
  }
 *{
    margin: 0;
@@ -26,6 +27,7 @@ body, nav, .home, .about, .project, .contact{
 } 
 body{
    flex-direction: column;
+   height: 100%;
 
 }
 body::-webkit-scrollbar {
@@ -39,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/* for nav section  */
+/* for nav section  
 nav {
    position: fixed;
    justify-content: space-between;
@@ -63,6 +65,126 @@ nav {
    font-weight: bolder;
    letter-spacing: .5px;
 }
+*/
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.btnWrapper a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Full nav by default (desktop) */
+.navBtn {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 200;
+  user-select: none;
+  transition: all 0.9s ease;
+}
+
+/* Responsive: Mobile/tablet */
+@media (max-width: 768px) {
+   
+   .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  .navBtn {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: #17191e;
+    width: 40vw;
+  height: 100vh;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.9s ease;
+    pointer-events: auto;
+  }
+
+  .navBtn.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .btnWrapper {
+    margin: 1rem 0;
+  }
+
+  .btnWrapper a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+
+
 .logoMobile{
    display: none;
 }

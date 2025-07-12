@@ -10,18 +10,33 @@
 <body>
    <div class="mainWrapper">
 <!-- TOP NAV SECTION -->
-      <nav>
-         <div class="logo">
-            <a href="#home"><p class="logoMobile">E</p><p class="logoMobile logoMobile-color">J</p></a>
-            <a href="#home"><p class="logo1">Ejemar.</p><p class="logo2">MALOLOY-ON</p></a>
-         </div>
-         <div class="navBtn">
-            <div class="btnWrapper"><a href="#home">Home</a></div>
-            <div class="btnWrapper"><a href="#about">About</a></div>
-            <div class="btnWrapper"><a href="#project">Projects</a></div>
-            <div class="btnWrapper"><a href="#contact">Contact</a></div>
-         </div>
-      </nav>
+<nav class="navfixed">
+  <div class="logo">
+    <a href="#home">
+      <p class="logoMobile">E</p>
+      <p class="logoMobile logoMobile-color">J</p>
+    </a>
+    <a href="#home">
+      <p class="logo1">Ejemar.</p>
+      <p class="logo2">MALOLOY-ON</p>
+    </a>
+  </div>
+
+  <!-- Hamburger icon -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="navBtn" id="navLinks">
+    <div class="btnWrapper"><a href="#home">Home</a></div>
+    <div class="btnWrapper"><a href="#about">About</a></div>
+    <div class="btnWrapper"><a href="#project">Projects</a></div>
+    <div class="btnWrapper"><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+
+
 <!-- home section -->
       <div id="home" class="home">
          <div class="hero-wrapper">
@@ -49,10 +64,10 @@
       </div>
 
 <!-- ABOUT SECTION  -->
-      <div id="about" class="about">
+      <div id="about" class="about reveal">
          <h3><strong>About</strong> Me</h3>
-         <div class="about-wrapper">
-            <div class="about-cards">
+         <div class="about-wrapper reveal">
+            <div class="about-cards reveal">
                <h5>What I Do.</h5>
 
                <ul>
@@ -64,7 +79,7 @@
 </ul>
 
             </div>
-            <div class="about-cards">
+            <div class="about-cards reveal">
                <h5>Why Choose Me?</h5>
                <li><img src="./icon/list-style.svg">Continuous Learner</li>
                <li><img src="./icon/list-style.svg">Collaborative Spirit</li>
@@ -81,7 +96,7 @@
             </div>
          </div>
          <h4><strong>Technologies</strong></h4>
-         <div class="tech last-container">
+         <div class="tech last-container reveal">
             <div><img src="./icon/tech/React.svg"></div>
             <div><img src="./icon/tech/JavaScript.svg"></div>
             <div><img src="./icon/tech/Html.svg"></div>
@@ -94,14 +109,14 @@
       </div>
 
 <!-- project section  -->
-      <div id="project" class="project">
+      <div id="project" class="project reveal">
          <h3><strong>My</strong> Works</h3>
-         <div class="project-container project-container-reverse">
-            <div class="project-text">
+         <div class="project-container project-container-reverse reveal">
+            <div class="project-text reveal">
                <h4>Ecommerce Website</h4>
                <p> A full-stack multi-role ecommerce platform built with the MERN stack. Includes secure login, product management, order tracking, PDF invoice generation, affiliate referral system, and responsive dashboards for admin, sellers, and users.</p>
                <h4>Tech use</h4>
-               <div class="tech-use">
+               <div class="tech-use reveal">
                   <small>Mongodb</small>
                   <small>Express.js</small>
                   <small>React.js</small>
@@ -110,8 +125,8 @@
                </div>
                <button> <a href="https://github.com/Devwezardtech/mus-ecommerce"></ahref> Repository <img src="./icon/tech/Github.svg"></button>
             </div>
-            <div id="project-img" class="project-img">
-               <div class="visit-site-cover"><a href="https://mus-ecommerce-shop.onrender.com"></div>
+            <div id="project-img" class="project-img reveal">
+               <div class="visit-site-cover reveal"><a href="https://mus-ecommerce-shop.onrender.com"></div>
                <video id="projectVideo" src="./projectVideo/ecommerce project.mp4" autoplay="1" loop="1" muted="1"></video>
             </div></a>
          </div>
@@ -119,11 +134,11 @@
 
 <!-- contact section  -->
 <!-- contact section  -->
-<div id="contact" class="contact">
+<div id="contact" class="contact reveal">
   <h3><strong>Contact</strong> Me</h3>
   <form>
-    <div class="mail-con">
-      <div class="input-wrapper contact-area">
+    <div class="mail-con reveal">
+      <div class="input-wrapper contact-area reveal">
         <label for="name">Fullname *</label>
         <input type="text" name="name" placeholder="Fullname" required />
 
@@ -134,14 +149,15 @@
         <input type="email" name="email" placeholder="example@sample.com" required />
       </div>
 
-      <div class="input-wrapper txt-area">
+      <div class="input-wrapper txt-area reveal">
         <label for="msg" class="label">Message *</label>
         <textarea name="message" rows="5" placeholder="Your message here..." required></textarea>
+         <div class="msg-wrapper reveal">
+        <button class="msgbtn reveal" type="submit">Send</button>
+      </div>
       </div>
 
-      <div class="msg-wrapper">
-        <button class="msgbtn" type="submit">Send</button>
-      </div>
+     
     </div>
   </form>
 </div>
