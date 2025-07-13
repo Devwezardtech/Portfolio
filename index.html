@@ -7,24 +7,26 @@
    <link rel="stylesheet" href="./stylesheet/media-992.css">
    <title>EJ</title>
 </head>
-<body>
+<body style="margin: 0; padding: 0; width: 100%;">
    <div class="mainWrapper">
 <!-- TOP NAV SECTION -->
-<nav class="navfixed">
+<nav class="navfixed"  style="display: flex; position: fixed; top: 0; z-index: 100; width: 100%;">
   <div class="logo">
+   
     <a href="#home">
       <p class="logoMobile">E</p>
       <p class="logoMobile logoMobile-color">J</p>
     </a>
+
+     <!-- Hamburger icon -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="right: 3rem;">
+    &#9776;
+  </div>
+
     <a href="#home">
       <p class="logo1">Ejemar.</p>
       <p class="logo2">MALOLOY-ON</p>
     </a>
-  </div>
-
-  <!-- Hamburger icon -->
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    &#9776;
   </div>
 
   <!-- Navigation Links -->
@@ -38,26 +40,26 @@
 
 
 <!-- home section -->
-      <div id="home" class="home">
-         <div class="hero-wrapper">
-            <div class="hero-text">
-               <div class="intro">
-                  <p class="intro-name">Hi!, I'm Ejemar Maloloy-on.</p>
+      <div id="home" class="home ">
+         <div class="hero-wrapper reveal">
+            <div class="hero-text reveal">
+               <div class="intro reveal">
+                  <p class="intro-name reveal">Hi!, I'm Ejemar Maloloy-on.</p>
                   <h1><strong>Web</strong> Developer</h1>
                   <p >Feel free to explore my portfolio, check out my<br>projects, and don't hesitate to reach out.</p>
                </div>
-               <div class="social-link">
+               <div class="social-link reveal">
                   <a onclick="openGmail()" href=""><img src="./icon/Gmail.svg"></a>
                   <a onclick="openLinkedIn()" href=""><img src="./icon/Linkedin.svg"></a>
                   <a onclick="openGitHub()" href=""><img src="./icon/Github.svg"> </a>
                   <a onclick="openMessenger()" href=""><img src="./icon/Messenger.svg"></a>
                </div>
-               <div class="download-cv">
+               <div class="download-cv reveal">
                   <a href="#contact">Contact me</a>
                   <button onclick="downloadCV()">Resume <img src="./icon/Download.svg"></button>
                </div>
             </div>
-            <div class="hero-logo">
+            <div class="hero-logo reveal">
                <img src="./icon/Me.jpg" alt="Me">
             </div>
          </div>
@@ -101,8 +103,8 @@
             <div><img src="./icon/tech/JavaScript.svg"></div>
             <div><img src="./icon/tech/Html.svg"></div>
             <div><img src="./icon/tech/CSS.svg"></div>
-            <div><img src="./icon/tech/Mongodb.svg"></div>
-            <div><img src="./icon/tech/Nodejs.svg"></div>
+            <div><img src="./icon/tech/Mongodb.png"></div>
+            <div><img src="./icon/tech/Node-js.svg"></div>
             <div><img src="./icon/tech/GIT.svg"></div>
             <div><img src="./icon/tech/Github.svg"></div>               
          </div>
@@ -134,7 +136,7 @@
 
 <!-- contact section  -->
 <!-- contact section  -->
-<div id="contact" class="contact reveal">
+<div id="contact" class="contact reveal" style="padding-bottom: 2rem;" >
   <h3><strong>Contact</strong> Me</h3>
   <form>
     <div class="mail-con reveal">

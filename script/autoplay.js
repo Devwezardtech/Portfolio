@@ -63,7 +63,7 @@
 
   const reveals = document.querySelectorAll('.reveal');
 
-  // Function to handle scroll and reveal elements
+  // Function to handle scroll and animate elements
   function handleScroll() {
     reveals.forEach((element) => {
       const windowHeight = window.innerHeight;
