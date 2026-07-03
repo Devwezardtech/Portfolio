@@ -28,7 +28,7 @@ body, nav, .home, .about, .project, .contact{
 body{
    flex-direction: column;
    height: 100%;
-   width: 117%;
+   width: 115%;
    background-color: #151925;
 
 }
