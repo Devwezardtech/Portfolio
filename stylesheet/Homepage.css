@@ -12,7 +12,7 @@
 }
 html {
    scroll-behavior: smooth;
-   min-width: 370px;
+   min-width: 100%;
    min-height: 400px;
    height: 100%;
  }
@@ -25,14 +25,13 @@ html {
 body, nav, .home, .about, .project, .contact{
    display: flex;
 } 
-
 body{
    flex-direction: column;
-   min-height: 100vh;
+   height: 100%;
+   width: 115%;
    background-color: #151925;
-   overflow-x: hidden;
-}
 
+}
 body::-webkit-scrollbar {
    width: .4rem;
    background-color: var(--card-color-main);
@@ -87,21 +86,21 @@ nav{
     top: 0;
     left: 0;
 
+    width: 100%;
+    height: 4.5rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
-    height: 70px;
-
     padding: 0 2rem;
+
+    background: #17191e;
+    border-bottom: 1px solid #222;
 
     box-sizing: border-box;
 
-    background: #17191e;
-    border-bottom: 1px solid #2d3034;
-
-    z-index: 1000;
+    z-index: 999;
 }
 
 .logo a {
@@ -238,9 +237,7 @@ nav .navBtn{
 .home{
    background-color: var(--background-color1);
    justify-content: center;
-   padding-top: 70px;
 }
-
 .hero-wrapper{
    display: flex;
    flex-wrap: wrap;

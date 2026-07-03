@@ -80,13 +80,7 @@
    nav{height: 4rem;}
    .logo{padding-left: 1rem;}
    .logo a{font-size: 1.8rem;}
-   .navBtn{
-      padding-right: 1rem !important; 
-      gap: .6rem !important;
-   }
-   .navBtn a{
-      padding: 6px !important;
-   }
+  
    .logoMobile{
       display: block !important;
    }
