@@ -1,12 +1,9 @@
 function downloadCV() {
-   var fileID = '1CGzOlWbTHa7Hnhl2hpNLDHo66xlM_kK-';
-   var downloadLink = 'https://drive.google.com/uc?export=download&id=' + fileID;
+    const link = document.createElement("a");
+    link.href = "./resume/EJEMAR-MALOLOY-ON-RESUME.pdf";
+    link.download = "EJEMAR-MALOLOY-ON-RESUME.pdf";
 
-   var link = document.createElement('a');
-      link.href = downloadLink;
-      link.download = 'ejemar_maloloy-on_web_developer_resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link); 
-   }
-   
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
