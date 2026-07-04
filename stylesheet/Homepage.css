@@ -841,6 +841,7 @@ nav .navBtn{
 
     white-space:nowrap;
 
+
 }
 
 .contact-btn:hover{
@@ -899,6 +900,7 @@ nav .navBtn{
 .contact-btn{
 
     width:100%;
+    cursor: pointer;
 
     max-width:220px;
 
