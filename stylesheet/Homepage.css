@@ -215,8 +215,8 @@ nav{
 .logoMobile{
    display: none;
 }
-.logo1, .logoMobile{color: #04afbb;}
-.logo2, .logoMobile-color{color: rgb(55, 102, 180);}
+.logo1, .logoMobile{color: #04afbb; font-size: 1.5rem; font-weight: bold;}
+.logo2, .logoMobile-color{color: rgb(26, 134, 170); font-size: 1.5rem; font-weight: bold;}
 nav .navBtn{
    height: auto;
    display: flex;
